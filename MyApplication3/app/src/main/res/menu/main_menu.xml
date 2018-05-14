@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cadastrar"
+        android:title="CADASTRAR" />
+    <item
+        android:id="@+id/atualizar"
+        android:title="ATUALIZAR" />
+    <item
+        android:id="@+id/excluir"
+        android:title="EXCLUIR" />
+    <item
+        android:id="@+id/listar"
+        android:title="LISTAR" />
+</menu>

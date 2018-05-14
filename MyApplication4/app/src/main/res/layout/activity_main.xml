@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a361151420162n.myapplication.MainActivity">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:text="TextView" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="216dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="210dp" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="155dp"
+                    android:text="Button" />
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>
