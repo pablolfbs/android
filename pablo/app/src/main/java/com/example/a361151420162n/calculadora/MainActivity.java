@@ -1,7 +1,7 @@
 package com.example.a361151420162n.calculadora;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -123,12 +123,18 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btnSub:
                 n1 = Integer.parseInt(labelResult.getText().toString());
+                op = "-";
+                labelResult.setText("");
                 break;
             case R.id.btnMulti:
                 n1 = Integer.parseInt(labelResult.getText().toString());
+                op = "*";
+                labelResult.setText("");
                 break;
             case R.id.btnDiv:
                 n1 = Integer.parseInt(labelResult.getText().toString());
+                op = "/";
+                labelResult.setText("");
                 break;
             case R.id.btnIgual:
 
@@ -137,6 +143,15 @@ public class MainActivity extends AppCompatActivity {
                 switch (op){
                     case "+":
                         resultado = n1 + n2;
+                        break;
+                    case "-":
+                        resultado = n1 - n2;
+                        break;
+                    case "*":
+                        resultado = n1 * n2;
+                        break;
+                    case "/":
+                        resultado = n1 / n2;
                         break;
                 }
 
