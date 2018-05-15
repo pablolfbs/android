@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("aluno", aluno);
 
         this.startActivity(intent);
+
     }
 
 }

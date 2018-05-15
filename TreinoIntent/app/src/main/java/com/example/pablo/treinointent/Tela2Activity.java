@@ -19,8 +19,7 @@ public class Tela2Activity extends AppCompatActivity {
 
         Intent intent = this.getIntent();
 
-        Aluno aluno = new Aluno();
-        aluno = (Aluno) intent.getSerializableExtra("aluno");
+        Aluno aluno = (Aluno) intent.getSerializableExtra("aluno");
 
         matricula.setText(String.valueOf(aluno.matricula));
         nome.setText(aluno.nome);
