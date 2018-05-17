@@ -6,41 +6,42 @@
     android:layout_height="match_parent"
     tools:context="com.example.a361151420162n.myapplication.MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="399dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="98dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="237dp"
-        android:background="@android:color/black"
-        android:fontFamily="cursive"
-        android:text="Android.Senac 2018"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_dark"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="92dp"
+        android:layout_marginBottom="164dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:background="@android:color/holo_green_light"
         android:onClick="clicar"
         android:text="BOTÃO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tel"
+        app:layout_constraintTop_toBottomOf="@+id/tel" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dp"
+        android:ems="10"
+        android:hint="Número do telefone"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
