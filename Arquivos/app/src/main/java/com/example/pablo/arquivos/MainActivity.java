@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void ler(View view) {
         int digito;
+
         String str = "";
         try {
             FileInputStream fileInputStream = this.openFileInput(arquivo);
